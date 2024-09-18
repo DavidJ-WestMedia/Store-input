@@ -1,4 +1,4 @@
-# This program is sued as a menu where a person will store numbers inot an array adn have the option to start the progma and enter a numerb to printer what they have enter so far 
+# This program is used as a menu where a person will store numbers inot an array adn have the option to start the progma and enter a numerb to printer what they have enter so far 
 # 
 y = []
 
@@ -11,8 +11,9 @@ def menu():
     while True:
         x = input('''
 1. Start
-2. Print  
-3. End
+2. Print
+3.open file 
+4. End
 ''')
         if x == 'end':
             print('goodbye')
@@ -28,6 +29,9 @@ def menu():
             a = input("Please enter a number: ")
             y.append(a)
             # It will start the program and add it to the array.
+        
+        elif x == "open":
+            file_reading()
 
 # This function will store the data that was entered while the script was active.
 def file_Opening(data):
@@ -37,5 +41,8 @@ def file_Opening(data):
     file.write(content + "\n")
     file.close()
 
+def file_reading():
+    file = open("info.txt", "r")
+    print(file.readline())
 
 menu()
