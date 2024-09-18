@@ -1,4 +1,4 @@
-# This program is sued as a menu where a person will store numbers inot an array adn have the option to start the progma and enter a numerb to printer what they have enter so far 
+# This program is used as a menu where a person will store numbers inot an array adn have the option to start the progma and enter a numerb to printer what they have enter so far 
 # 
 y = []
 
